@@ -7,12 +7,10 @@ import Features from './components/Features';
 import Stats from './components/Stats';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
-import CustomCursor from './components/CustomCursor';
 
 function App() {
   return (
     <div className="bg-white min-h-screen text-dark selection:bg-primary selection:text-white">
-      <CustomCursor />
       <Header />
       <main>
         <Hero />

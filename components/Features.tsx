@@ -1,7 +1,7 @@
 import React from 'react';
 import { Reveal } from './ui/Reveal';
 import { motion } from 'framer-motion';
-import { Check, Lock, MapPin, Shield, Navigation, Wifi, Battery, Signal, AlertTriangle } from 'lucide-react';
+import { Check, Lock, MapPin, Navigation, Wifi, Battery, Signal, AlertTriangle } from 'lucide-react';
 import { WHATSAPP_URL } from '../constants';
 
 const NotificationCard = ({ 
@@ -144,23 +144,14 @@ const Features: React.FC = () => {
                    <div className="w-2 h-2 rounded-full bg-blue-900/40"></div>
                 </div>
 
-                {/* INNER SCREEN - REALISTIC GPS TRACKING APP WITH PANNING MAP */}
+                {/* INNER SCREEN - REALISTIC GPS TRACKING APP WITH STATIC MAP */}
                 <div className="w-full h-full bg-[#0f172a] relative overflow-hidden">
                   
-                  {/* PANNING MAP LAYER */}
-                  {/* This layer is larger than the screen and moves to simulate the car driving */}
-                  <motion.div 
-                    animate={{ 
-                      x: ["-10%", "-40%"], 
-                      y: ["-10%", "-45%"] 
-                    }}
-                    transition={{ 
-                      duration: 18, 
-                      repeat: Infinity, 
-                      ease: "linear", 
-                      repeatType: "reverse" 
-                    }}
+                  {/* STATIC MAP LAYER */}
+                  {/* This layer is larger than the screen and remains static as requested */}
+                  <div 
                     className="absolute inset-0 w-[800px] h-[1000px] pointer-events-none"
+                    style={{ transform: 'translate(-25%, -25%)' }}
                   >
                     {/* Map Base with City Grid Lines */}
                     <div className="absolute inset-0 bg-[#0f172a]" 
@@ -194,12 +185,12 @@ const Features: React.FC = () => {
                         className="drop-shadow-[0_0_15px_rgba(255,91,0,0.6)]"
                       />
                     </svg>
-                  </motion.div>
+                  </div>
 
                   {/* Overlay Gradient to fade edges slightly */}
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_40%,rgba(15,23,42,0.8)_100%)] pointer-events-none"></div>
 
-                  {/* CENTER FIXED VEHICLE (It stays in the middle while map pans beneath it) */}
+                  {/* CENTER FIXED VEHICLE */}
                   <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center z-20 pointer-events-none">
                       {/* Pulsing Aura */}
                       <div className="absolute w-20 h-20 bg-primary/20 rounded-full animate-ping"></div>
@@ -207,7 +198,6 @@ const Features: React.FC = () => {
                       
                       {/* Vehicle Avatar / Navigation Arrow */}
                       <div className="relative w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-[0_0_25px_rgba(255,91,0,0.8)] border-4 border-[#0f172a]">
-                        {/* A nice navigation arrow pointing up/right to match the path direction */}
                         <Navigation className="w-5 h-5 text-primary rotate-45 fill-primary" />
                       </div>
                   </div>
@@ -248,7 +238,6 @@ const Features: React.FC = () => {
               </motion.div>
 
               {/* FLOATING NOTIFICATIONS IN 3D SPACE */}
-              {/* Note: I adjusted positions to stick out but stay within a safe container boundary so they aren't hidden on mobile */}
               
               {/* Notification 1: Top Left */}
               <NotificationCard 
@@ -262,7 +251,7 @@ const Features: React.FC = () => {
                 className="-top-4 -left-12 sm:-left-20 md:-left-28 opacity-95"
               />
 
-              {/* Notification 2: Bottom Right (Updated to Speed Alert) */}
+              {/* Notification 2: Bottom Right */}
               <NotificationCard 
                 delay={0.5}
                 title="Excesso de Velocidade"
@@ -274,7 +263,7 @@ const Features: React.FC = () => {
                 className="bottom-12 -right-8 sm:-right-16 md:-right-24"
               />
 
-              {/* Notification 3: Middle Left (Overlapping slightly for depth) */}
+              {/* Notification 3: Middle Left */}
               <NotificationCard 
                 delay={0.8}
                 title="Ignição Ligada"
