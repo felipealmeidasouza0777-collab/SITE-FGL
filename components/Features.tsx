@@ -85,7 +85,7 @@ const Features: React.FC = () => {
                   "Notificações instantâneas de ignição",
                   "Bloqueio de veículo em 1 clique",
                   "Histórico completo de trajetos",
-                  "Suporte 24h direto pelo App"
+                  "Suporte Especializado direto pelo App"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 font-heading font-bold text-dark/80 text-sm md:text-base">
                     <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
@@ -110,8 +110,14 @@ const Features: React.FC = () => {
           </div>
 
           {/* Right Column: 3D Layered Visual Composition with Pure CSS Phone */}
-          <div className="order-1 lg:order-2 relative h-[600px] md:h-[750px] w-full flex items-center justify-center">
+          <div className="order-1 lg:order-2 relative min-h-[700px] md:min-h-[850px] w-full flex flex-col items-center justify-center">
             
+            <Reveal>
+              <h3 className="font-heading font-extrabold text-2xl md:text-3xl text-dark mb-12 text-center">
+                Aplicativo Próprio da FGL
+              </h3>
+            </Reveal>
+
             {/* The core phone container. Scaled slightly on mobile so notifications don't overflow screen */}
             <div className="relative w-[260px] md:w-[320px] h-[520px] md:h-[640px] flex items-center justify-center shrink-0">
               

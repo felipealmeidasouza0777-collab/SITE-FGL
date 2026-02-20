@@ -11,57 +11,55 @@ export const WHATSAPP_URL = "https://wa.me/5511971000304?text=Ol%C3%A1%20vim%20p
 export const NAV_LINKS = [
   { label: "O Problema", href: "#problem" },
   { label: "Soluções", href: "#solutions" },
-  { label: "Benefícios", href: "#benefits" },
+  { label: "Serviços", href: "#services" },
   { label: "Contato", href: "#contact" },
 ];
 
 export const FEATURES = [
   {
-    title: "Rastreamento 24h",
-    description: "Localização exata via satélite em tempo real, acessível pelo app ou web.",
+    title: "Rastreamento em Tempo Real",
+    description: "Localização exata via satélite, acessível instantaneamente pelo app ou web.",
     icon: MapPin,
   },
   {
-    title: "Bloqueio Remoto",
-    description: "Desative a ignição do veículo instantaneamente em caso de roubo ou furto.",
+    title: "Bloqueio de Segurança",
+    description: "Desative a ignição do veículo instantaneamente em caso de qualquer suspeita.",
     icon: Lock,
   },
   {
-    title: "Alertas Inteligentes",
-    description: "Notificações de ignição, excesso de velocidade e cercas virtuais.",
+    title: "Alertas de Proteção",
+    description: "Notificações inteligentes de ignição, movimento e cercas virtuais.",
     icon: AlertTriangle,
   },
   {
-    title: "App Exclusivo",
-    description: "Controle total na palma da mão com histórico de rotas e relatórios.",
+    title: "App de Alta Tecnologia",
+    description: "Controle total na palma da mão com relatórios de performance e segurança.",
     icon: Smartphone,
   }
 ];
 
 export const STATS = [
-  { value: 98, suffix: "%", label: "Índice de Recuperação" },
-  { value: 24, suffix: "h", label: "Monitoramento Ativo" },
-  { value: 5000, suffix: "+", label: "Veículos Protegidos" },
+  { value: 3000, suffix: "+", label: "Clientes Atendidos" },
+  { value: 99, suffix: "%", label: "Índice de Satisfação" },
+  { value: 10, suffix: "+", label: "Anos de Experiência" },
 ];
 
 export const TESTIMONIALS = [
   {
     name: "Ricardo Mendes",
     role: "Gestor de Frotas",
-    text: "Reduzi os custos operacionais em 20% e durmo tranquilo sabendo onde meus caminhões estão.",
+    text: "Reduzi os custos operacionais e tenho controle total sobre a localização dos veículos.",
   },
   {
     name: "Ana Souza",
     role: "Proprietária",
-    text: "Recuperei meu carro em menos de 1 hora após o furto. A equipe da FGL foi sensacional.",
+    text: "O suporte da FGL foi fundamental para a segurança do meu patrimônio.",
   },
   {
     name: "Carlos Ferreira",
     role: "Motorista de App",
-    text: "Segurança é investimento. O bloqueador da FGL já salvou meu patrimônio duas vezes.",
+    text: "Investimento necessário para quem trabalha nas ruas. Tecnologia confiável.",
   }
 ];
 
-export const PARTNERS = [
-  "GRUPO FGL", "SEGURANÇA TOTAL", "MONITORAMENTO VIP", "FROTAS BRASIL", "TECH TRACK", "AUTO GUARD"
-];
+export const PARTNERS = [];

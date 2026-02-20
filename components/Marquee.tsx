@@ -1,16 +1,25 @@
 import React from 'react';
 import { PARTNERS } from '../constants';
 
+const INSTITUTIONAL_INFO = [
+  "Tecnologia Avançada",
+  "Suporte Especializado",
+  "Gestão de Frotas",
+  "Recuperação Veicular",
+  "Bloqueio de Segurança",
+  "Monitoramento Estratégico"
+];
+
 const Marquee: React.FC = () => {
   return (
-    <div className="w-full bg-primary text-white py-6 overflow-hidden">
-      <div className="flex animate-marquee whitespace-nowrap">
-        {[...PARTNERS, ...PARTNERS, ...PARTNERS, ...PARTNERS].map((partner, index) => (
-          <div key={index} className="mx-8 md:mx-16 flex items-center">
-             <span className="font-heading font-bold text-lg md:text-xl uppercase tracking-widest opacity-90 hover:opacity-100 transition-opacity cursor-default">
-               {partner}
+    <div className="w-full bg-primary text-white py-4 overflow-hidden border-y border-white/10">
+      <div className="flex animate-marquee-fast whitespace-nowrap">
+        {[...INSTITUTIONAL_INFO, ...INSTITUTIONAL_INFO, ...INSTITUTIONAL_INFO].map((info, index) => (
+          <div key={index} className="mx-6 md:mx-12 flex items-center">
+             <span className="font-heading font-bold text-sm md:text-base uppercase tracking-[0.2em] opacity-90">
+               {info}
              </span>
-             <span className="mx-8 text-white/40 font-bold">/</span>
+             <span className="mx-6 md:mx-12 text-white/30 font-bold">/</span>
           </div>
         ))}
       </div>
