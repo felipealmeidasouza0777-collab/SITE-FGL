@@ -1,8 +1,8 @@
 import React from 'react';
 import { Reveal } from './ui/Reveal';
 import { Shield } from 'lucide-react';
-import agentes from '../assets/images/agentes.png.png';
-import guincho from '../assets/images/guincho.png.png';
+import agentes from '../assets/images/agentes.png';
+import guincho from '../assets/images/guincho.png';
 
 const SERVICES = [
   {
