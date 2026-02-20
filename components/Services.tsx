@@ -1,24 +1,22 @@
 import React from 'react';
 import { Reveal } from './ui/Reveal';
-import { Shield } from 'lucide-react';
-import agentes from '../assets/images/agentes.png';
-import guincho from '../assets/images/guincho.png';
+import { Shield, Truck, Car, Bus } from 'lucide-react';
 
 const SERVICES = [
   {
     title: "Guincho 24 Horas",
     description: "Atendimento rápido para remoção do seu veículo em casos de pane, acidente ou recuperação. Segurança e agilidade quando você mais precisa.",
-    image: guincho
+    icon: Truck
   },
   {
     title: "Recuperação de Veículos",
     description: "Monitoramento ativo e suporte estratégico para localização e recuperação de veículos roubados com tecnologia em tempo real.",
-    image: agentes
+    icon: Car
   },
   {
     title: "Rastreamento de Frotas",
     description: "Gestão completa da sua frota com monitoramento em tempo real, relatórios inteligentes e controle total das operações.",
-    image: agentes
+    icon: Bus
   }
 ];
 
@@ -59,12 +57,8 @@ const Services: React.FC = () => {
           {SERVICES.map((service, index) => (
             <Reveal key={index} delay={index * 0.2}>
               <div className="bg-white rounded-2xl overflow-hidden shadow-xl shadow-black/5 group hover:-translate-y-2 transition-transform duration-500 border border-black/5 h-full flex flex-col">
-                <div className="aspect-[16/10] overflow-hidden relative">
-                  <img 
-                    src={service.image} 
-                    alt={service.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
+                <div className="aspect-[16/10] bg-dark/5 flex items-center justify-center relative group-hover:bg-primary/5 transition-colors duration-500">
+                  <service.icon className="w-16 h-16 text-primary/40 group-hover:text-primary transition-all duration-500 group-hover:scale-110" />
                 </div>
                 <div className="p-8 flex-1 flex flex-col">
                   <h3 className="font-heading font-bold text-xl text-dark mb-4">

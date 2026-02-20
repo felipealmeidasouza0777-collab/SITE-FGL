@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex flex-col md:flex-row gap-6 items-start md:items-center"
+            className="flex flex-col md:flex-row gap-6 md:gap-16 items-start md:items-center"
           >
             <a
               href={WHATSAPP_URL}
