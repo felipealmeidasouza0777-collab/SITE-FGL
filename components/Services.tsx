@@ -64,7 +64,6 @@ const Services: React.FC = () => {
                     src={service.image} 
                     alt={service.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                    referrerPolicy="no-referrer"
                   />
                 </div>
                 <div className="p-8 flex-1 flex flex-col">
