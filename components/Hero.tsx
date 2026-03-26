@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, ShieldCheck } from 'lucide-react';
 import { IMAGES } from '../assets/images';
-import { WHATSAPP_URL } from '../constants';
 
 const Hero: React.FC = () => {
   return (
@@ -57,9 +56,7 @@ const Hero: React.FC = () => {
             className="flex flex-col md:flex-row gap-6 md:gap-16 items-start md:items-center"
           >
             <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#plan-builder"
               data-cursor-hover
               className="group relative inline-flex px-10 py-5 bg-primary text-white font-heading font-bold text-sm uppercase tracking-widest overflow-hidden transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:-translate-y-1"
             >

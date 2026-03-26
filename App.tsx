@@ -20,8 +20,8 @@ function App() {
         <Marquee />
         <Problem />
         <Features />
-        <Services />
         <PlanBuilder />
+        <Services />
         <Stats />
         <CTA />
       </main>
