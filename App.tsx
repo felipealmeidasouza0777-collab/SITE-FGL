@@ -9,6 +9,7 @@ import PlanBuilder from './components/PlanBuilder';
 import Stats from './components/Stats';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <CTA />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }
