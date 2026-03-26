@@ -27,6 +27,14 @@ const PlanBuilder: React.FC = () => {
   const handleSelectPlan = (plan: PlanType) => {
     setSelectedPlan(plan);
     setStep(2);
+    // Auto-scroll to the top of the section so the user sees the options immediately
+    setTimeout(() => {
+      const element = document.getElementById('plan-builder');
+      if (element) {
+        const y = element.getBoundingClientRect().top + window.scrollY - 100;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    }, 100);
   };
 
   const handleBack = () => {
@@ -86,8 +94,8 @@ Gostaria de dar continuidade.`;
     <section id="plan-builder" className="py-24 bg-gray-50 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute -top-[20%] -right-[10%] w-[50%] h-[50%] rounded-full bg-primary/5 blur-[120px]"></div>
-        <div className="absolute -bottom-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-primary/5 blur-[120px]"></div>
+        <div className="absolute -top-[20%] -right-[10%] w-[50%] h-[50%] rounded-full bg-primary/5 blur-3xl transform-gpu"></div>
+        <div className="absolute -bottom-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-primary/5 blur-3xl transform-gpu"></div>
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-5xl">
@@ -96,7 +104,7 @@ Gostaria de dar continuidade.`;
             Personalize sua Segurança
           </span>
           <h2 className="font-heading font-extrabold text-3xl md:text-4xl lg:text-5xl text-dark mb-4">
-            Monte seu Plano de <span className="text-primary">Proteção Veicular 🚗</span>
+            Monte seu Plano de <span className="text-primary">Proteção Veicular contra Roubo/furto 🚗</span>
           </h2>
           <p className="text-dark/60 font-sans max-w-2xl mx-auto text-base md:text-lg">
             Escolha a opção que melhor atende às suas necessidades. Transparência total e sem surpresas.
@@ -107,10 +115,10 @@ Gostaria de dar continuidade.`;
           
           {/* Progress Bar */}
           <div className="flex bg-gray-50 border-b border-gray-100">
-            <div className={`flex-1 py-4 text-center font-heading font-bold text-sm transition-colors duration-300 ${step === 1 ? 'text-primary border-b-2 border-primary bg-primary/5' : 'text-gray-400'}`}>
+            <div className={`flex-1 py-4 px-2 text-center font-heading font-bold text-xs sm:text-sm transition-colors duration-300 ${step === 1 ? 'text-primary border-b-2 border-primary bg-primary/5' : 'text-gray-400'}`}>
               1. Escolha do Plano
             </div>
-            <div className={`flex-1 py-4 text-center font-heading font-bold text-sm transition-colors duration-300 ${step === 2 ? 'text-primary border-b-2 border-primary bg-primary/5' : 'text-gray-400'}`}>
+            <div className={`flex-1 py-4 px-2 text-center font-heading font-bold text-xs sm:text-sm transition-colors duration-300 ${step === 2 ? 'text-primary border-b-2 border-primary bg-primary/5' : 'text-gray-400'}`}>
               2. Configuração
             </div>
           </div>
@@ -169,9 +177,9 @@ Gostaria de dar continuidade.`;
                     
                     <button 
                       onClick={() => handleSelectPlan('protecao')}
-                      className="w-full py-4 bg-dark text-white rounded-xl font-heading font-bold uppercase tracking-widest text-sm hover:bg-primary transition-colors flex items-center justify-center gap-2"
+                      className="w-full py-4 px-4 bg-dark text-white rounded-xl font-heading font-bold uppercase tracking-wider text-xs sm:text-sm hover:bg-primary transition-colors flex items-center justify-center gap-2 text-center"
                     >
-                      Quero Proteção Completa <ArrowRight className="w-4 h-4" />
+                      Quero Proteção Completa <ArrowRight className="w-4 h-4 shrink-0" />
                     </button>
                   </div>
 
@@ -212,9 +220,9 @@ Gostaria de dar continuidade.`;
                     
                     <button 
                       onClick={() => handleSelectPlan('rastreamento')}
-                      className="w-full py-4 bg-white border-2 border-dark text-dark rounded-xl font-heading font-bold uppercase tracking-widest text-sm hover:bg-dark hover:text-white transition-colors flex items-center justify-center gap-2"
+                      className="w-full py-4 px-4 bg-white border-2 border-dark text-dark rounded-xl font-heading font-bold uppercase tracking-wider text-xs sm:text-sm hover:bg-dark hover:text-white transition-colors flex items-center justify-center gap-2 text-center"
                     >
-                      Montar meu Plano <ArrowRight className="w-4 h-4" />
+                      Montar meu Plano <ArrowRight className="w-4 h-4 shrink-0" />
                     </button>
                   </div>
                 </motion.div>
@@ -385,9 +393,9 @@ Gostaria de dar continuidade.`;
                           href={generateWhatsAppLink()}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="w-full py-4 bg-primary hover:bg-primary/90 text-white rounded-xl font-heading font-bold uppercase tracking-widest text-sm transition-colors flex items-center justify-center gap-2 shadow-lg shadow-primary/30"
+                          className="w-full py-4 px-4 bg-primary hover:bg-primary/90 text-white rounded-xl font-heading font-bold uppercase tracking-wider text-xs sm:text-sm transition-colors flex items-center justify-center shadow-lg shadow-primary/30 text-center"
                         >
-                          Falar com um Especialista
+                          Enviar meu plano personalizado
                         </a>
                         
                         {/* Trust Elements */}

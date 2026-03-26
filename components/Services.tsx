@@ -38,21 +38,6 @@ const Services: React.FC = () => {
           </div>
         </Reveal>
 
-        <div className="mb-12 flex flex-wrap justify-center gap-6 opacity-60">
-          <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg border border-gray-200 shadow-sm">
-            <Shield className="w-4 h-4 text-primary" />
-            <span className="text-[10px] font-heading font-bold uppercase tracking-widest text-dark">Tecnologia Avançada</span>
-          </div>
-          <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg border border-gray-200 shadow-sm">
-            <Shield className="w-4 h-4 text-primary" />
-            <span className="text-[10px] font-heading font-bold uppercase tracking-widest text-dark">Suporte Especializado</span>
-          </div>
-          <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg border border-gray-200 shadow-sm">
-            <Shield className="w-4 h-4 text-primary" />
-            <span className="text-[10px] font-heading font-bold uppercase tracking-widest text-dark">Gestão Eficiente</span>
-          </div>
-        </div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {SERVICES.map((service, index) => (
             <Reveal key={index} delay={index * 0.2}>

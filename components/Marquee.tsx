@@ -13,7 +13,7 @@ const INSTITUTIONAL_INFO = [
 const Marquee: React.FC = () => {
   return (
     <div className="w-full bg-primary text-white py-4 overflow-hidden border-y border-white/10">
-      <div className="flex animate-marquee-fast whitespace-nowrap">
+      <div className="flex animate-marquee-fast whitespace-nowrap transform-gpu">
         {[...INSTITUTIONAL_INFO, ...INSTITUTIONAL_INFO, ...INSTITUTIONAL_INFO].map((info, index) => (
           <div key={index} className="mx-6 md:mx-12 flex items-center">
              <span className="font-heading font-bold text-sm md:text-base uppercase tracking-[0.2em] opacity-90">
