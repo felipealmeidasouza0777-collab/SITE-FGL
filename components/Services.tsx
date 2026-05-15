@@ -6,19 +6,19 @@ const SERVICES = [
     title: "Guincho 24 Horas",
     description:
       "Atendimento rápido para remoção do seu veículo em casos de pane, acidente ou recuperação. Segurança e agilidade quando você mais precisa.",
-    image: "/assets/images/guincho.jpg"
+    image: "src/assets/images/guincho.jpg"
   },
   {
     title: "Recuperação de Veículos",
     description:
       "Monitoramento ativo e suporte estratégico para localização e recuperação de veículos roubados com tecnologia em tempo real.",
-    image: "/assets/images/busca.jpg"
+    image: "src/assets/images/busca.jpg"
   },
   {
     title: "Rastreamento de Frotas",
     description:
       "Gestão completa da sua frota com monitoramento em tempo real, relatórios inteligentes e controle total das operações.",
-    image: "/assets/images/frota.jpg"
+    image: "src/assets/images/frota.jpg"
   }
 ];
 
