@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { WHATSAPP_URL } from '../constants';
 
 const WhatsAppButton: React.FC = () => {
+  const [showBubble, setShowBubble] = useState(false);
+
+  useEffect(() => {
+    // Define o tempo de espera de 7 segundos antes de mostrar a mensagem
+    const timer = setTimeout(() => {
+      setShowBubble(true);
+    }, 7000);
+
+    // Limpa o timer caso o componente seja desmontado antes dos 7 segundos
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       {/* Animações customizadas para o balão de conversa e o botão */}
@@ -43,13 +55,15 @@ const WhatsAppButton: React.FC = () => {
           className="relative flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg shadow-[#25D366]/30 hover:scale-110 hover:shadow-xl hover:shadow-[#25D366]/40 transition-all duration-300 group"
           aria-label="Falar no WhatsApp"
         >
-          {/* Balão de Mensagem Amigável (Mobile e Desktop) */}
-          <span className="animate-chat-bubble absolute right-full mr-4 bottom-1 bg-white text-dark text-xs md:text-sm font-bold px-4 py-2.5 rounded-2xl shadow-xl border border-black/5 flex items-center gap-1.5 whitespace-nowrap pointer-events-none select-none drop-shadow-sm">
-            Quero falar com um Especialista 😊
-            
-            {/* Seta indicativa do balão apontando para o botão */}
-            <span className="absolute top-1/2 -translate-y-1/2 -right-1 w-2.5 h-2.5 bg-white rotate-45 border-r border-t border-black/5" />
-          </span>
+          {/* Balão de Mensagem Amigável - Renderiza apenas após 7 segundos */}
+          {showBubble && (
+            <span className="animate-chat-bubble absolute right-full mr-4 bottom-1 bg-white text-dark text-xs md:text-sm font-bold px-4 py-2.5 rounded-2xl shadow-xl border border-black/5 flex items-center gap-1.5 whitespace-nowrap pointer-events-none select-none drop-shadow-sm">
+              Quero falar com um Especialista 😊
+              
+              {/* Seta indicativa do balão apontando para o botão */}
+              <span className="absolute top-1/2 -translate-y-1/2 -right-1 w-2.5 h-2.5 bg-white rotate-45 border-r border-t border-black/5" />
+            </span>
+          )}
 
           {/* Ícone Oficial do WhatsApp SVG */}
           <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" className="z-10">
