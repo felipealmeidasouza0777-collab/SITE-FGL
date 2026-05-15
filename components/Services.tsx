@@ -1,7 +1,7 @@
 import React from 'react';
 import { Reveal } from './ui/Reveal';
 import { Shield, Truck, Car, Bus } from 'lucide-react';
-import { IMAGES } from 'public/assets/images';
+import { IMAGES } from '/assets/images';
 
 const SERVICES = [
   {
@@ -14,7 +14,7 @@ const SERVICES = [
     title: "Recuperação de Veículos",
     description: "Monitoramento ativo e suporte estratégico para localização e recuperação de veículos roubados com tecnologia em tempo real.",
     icon: Car,
-    image: busca.jpg
+    image:'/assets/images/busca.jpg'
   },
   {
     title: "Rastreamento de Frotas",
