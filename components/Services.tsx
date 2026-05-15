@@ -1,4 +1,4 @@
-```tsx
+```tsx id="wr76s4"
 import React from 'react';
 import { Reveal } from './ui/Reveal';
 import { Truck, Bus, Car } from 'lucide-react';
@@ -36,7 +36,7 @@ const SERVICES: Service[] = [
   }
 ];
 
-function Services() {
+const Services = () => {
   return (
     <section id="services" className="py-24 md:py-32 bg-gray">
       <div className="container mx-auto px-6">
@@ -127,7 +127,7 @@ function Services() {
       </div>
     </section>
   );
-}
+};
 
 export default Services;
 ```
