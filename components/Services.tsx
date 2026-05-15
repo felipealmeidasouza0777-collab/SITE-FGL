@@ -1,6 +1,6 @@
 import React from 'react';
 import { Reveal } from './ui/Reveal';
-import { Truck, Bus, car } from 'lucide-react';
+import { Truck, Bus, Car } from 'lucide-react';
 
 const SERVICES = [
   {
