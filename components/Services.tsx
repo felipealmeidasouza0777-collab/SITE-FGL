@@ -14,7 +14,7 @@ const SERVICES = [
     title: "Recuperação de Veículos",
     description: "Monitoramento ativo e suporte estratégico para localização e recuperação de veículos roubados com tecnologia em tempo real.",
     icon: Car,
-    image: IMAGES.serviceRecuperacao
+    image: busca.jpg
   },
   {
     title: "Rastreamento de Frotas",
