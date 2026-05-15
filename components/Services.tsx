@@ -1,7 +1,7 @@
 import React from 'react';
 import { Reveal } from './ui/Reveal';
 import { Shield, Truck, Car, Bus } from 'lucide-react';
-import { IMAGES } from '../src/assets/images';
+import { IMAGES } from 'public/assets/images';
 
 const SERVICES = [
   {
