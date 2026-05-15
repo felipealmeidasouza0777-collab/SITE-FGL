@@ -3,7 +3,15 @@ import React from 'react';
 import { Reveal } from './ui/Reveal';
 import { Truck, Bus, Car } from 'lucide-react';
 
-const SERVICES = [
+type Service = {
+  title: string;
+  description: string;
+  icon: React.ElementType;
+  image: string;
+  cta?: boolean;
+};
+
+const SERVICES: Service[] = [
   {
     title: "Guincho 24 Horas",
     description:
@@ -28,13 +36,14 @@ const SERVICES = [
   }
 ];
 
-export default function Services() {
+function Services() {
   return (
     <section id="services" className="py-24 md:py-32 bg-gray">
       <div className="container mx-auto px-6">
 
         <Reveal>
           <div className="text-center mb-16">
+
             <span className="text-primary font-heading font-bold text-xs uppercase tracking-widest mb-4 block">
               Soluções Institucionais
             </span>
@@ -47,13 +56,16 @@ export default function Services() {
               Mais de 3.000 clientes atendidos e satisfeitos.
               Tecnologia e suporte para a segurança do seu patrimônio.
             </p>
+
           </div>
         </Reveal>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
           {SERVICES.map((service, index) => (
 
             <Reveal key={index} delay={index * 0.2}>
+
               <div className="bg-white rounded-2xl overflow-hidden shadow-xl shadow-black/5 group hover:-translate-y-2 transition-transform duration-500 border border-black/5 h-full flex flex-col">
 
                 <div className="aspect-[16/10] overflow-hidden relative">
@@ -67,7 +79,9 @@ export default function Services() {
                   <div className="absolute inset-0 bg-dark/20 group-hover:bg-primary/10 transition-colors duration-500" />
 
                   <div className="absolute top-4 right-4 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg">
+
                     <service.icon className="w-5 h-5 text-primary" />
+
                   </div>
 
                 </div>
@@ -94,19 +108,26 @@ export default function Services() {
                   )}
 
                   <div className="pt-4 border-t border-gray-100 flex items-center justify-between">
+
                     <span className="text-[10px] font-heading font-bold uppercase tracking-widest text-primary">
                       Qualidade FGL Brasil
                     </span>
+
                   </div>
 
                 </div>
+
               </div>
+
             </Reveal>
 
           ))}
+
         </div>
       </div>
     </section>
   );
 }
+
+export default Services;
 ```
