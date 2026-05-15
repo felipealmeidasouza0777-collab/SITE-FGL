@@ -7,7 +7,7 @@ const SERVICES = [
     title: "Guincho 24 Horas",
     description: "Atendimento rápido para remoção do seu veículo em casos de pane, acidente ou recuperação. Segurança e agilidade quando você mais precisa.",
     icon: Truck,
-    image: 
+    image: "/assets/images/busca.jpg"
   },
   {
     title: "Recuperação de Veículos",
@@ -19,7 +19,7 @@ const SERVICES = [
     title: "Rastreamento de Frotas",
     description: "Gestão completa da sua frota com monitoramento em tempo real, relatórios inteligentes e controle total das operações.",
     icon: Bus,
-    image: 
+    image: "/assets/images/busca.jpg"
   }
 ];
 
