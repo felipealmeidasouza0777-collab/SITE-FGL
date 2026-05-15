@@ -1,4 +1,3 @@
-```tsx id="wr76s4"
 import React from 'react';
 import { Reveal } from './ui/Reveal';
 import { Truck, Bus, Car } from 'lucide-react';
@@ -130,4 +129,3 @@ const Services = () => {
 };
 
 export default Services;
-```
