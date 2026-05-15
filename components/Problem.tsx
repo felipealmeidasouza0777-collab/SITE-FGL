@@ -1,6 +1,6 @@
 import React from 'react';
 import { Reveal } from './ui/Reveal';
-import { IMAGES } from '../assets/images';
+import { IMAGES } from '../src/assets/images';
 
 const Problem: React.FC = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, ShieldCheck } from 'lucide-react';
-import { IMAGES } from '../assets/images';
+import { IMAGES } from '../src/assets/images';
 
 const Hero: React.FC = () => {
   return (
