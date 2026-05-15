@@ -50,19 +50,23 @@ const Services: React.FC = () => {
             <Reveal key={index} delay={index * 0.2}>
               <div className="bg-white rounded-2xl overflow-hidden shadow-xl shadow-black/5 group hover:-translate-y-2 transition-transform duration-500 border border-black/5 h-full flex flex-col">
 
-                <div className="aspect-[16/10] bg-dark/5 flex items-center justify-center relative overflow-hidden group-hover:bg-primary/5 transition-colors duration-500">
+               <div className="aspect-[16/10] bg-dark/5 flex items-center justify-center relative overflow-hidden group-hover:bg-primary/5 transition-colors duration-500">
 
-                  {service.image ? (
-                    <img
-                      src={service.image}
-                      alt={service.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                  ) : (
-                    <service.icon className="w-16 h-16 text-primary/40 group-hover:text-primary transition-all duration-500 group-hover:scale-110" />
-                  )}
+  {service.image ? (
+    <img
+      src={service.image}
+      alt={service.title}
+      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+    />
+  ) : (
+    service.icon && (
+      <service.icon
+        className="w-16 h-16 text-primary/40 group-hover:text-primary transition-all duration-500 group-hover:scale-110"
+      />
+    )
+  )}
 
-                </div>
+</div>
 
                 <div className="p-8 flex-1 flex flex-col">
                   <h3 className="font-heading font-bold text-xl text-dark mb-4">
