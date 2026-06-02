@@ -15,14 +15,14 @@ const SERVICES = [
     description:
       "Monitoramento logístico ativo, rastreador com corte de combustível e suporte tático especializado para localização e recuperação de veículos furtados ou roubados.",
     icon: Car,
-    image: "/assets/images/agentes.png"
+    image: "/assets/images/busca.png"
   },
   {
     title: "Rastreamento e Gestão de Frotas",
     description:
       "Gerenciamento inteligente de frotas de cargas, caminhões e carros leves. Reduza custos de combustível, trace itinerários e controle a velocidade operacional.",
     icon: Bus,
-    image: "/assets/images/frotas.png"
+    image: "/assets/images/agentes.png"
   }
 ];
 
