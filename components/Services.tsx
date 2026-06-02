@@ -22,7 +22,7 @@ const SERVICES = [
     description:
       "Gerenciamento inteligente de frotas de cargas, caminhões e carros leves. Reduza custos de combustível, trace itinerários e controle a velocidade operacional.",
     icon: Bus,
-    image: "public/assets/images/buscas.JPG"
+    image: "public/assets/images/buscas.png"
   }
 ];
 
