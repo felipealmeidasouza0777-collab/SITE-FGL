@@ -11,7 +11,7 @@ const SERVICES = [
     image: "/assets/images/guincho.png"
   },
   {
-    title: "Recuperação Veicular de Elite",
+    title: "Recuperação Veicular Profissional",
     description:
       "Monitoramento logístico ativo, rastreador com corte de combustível e suporte tático especializado para localização e recuperação de veículos furtados ou roubados.",
     icon: Car,
@@ -22,17 +22,19 @@ const SERVICES = [
     description:
       "Gerenciamento inteligente de frotas de cargas, caminhões e carros leves. Reduza custos de combustível, trace itinerários e controle a velocidade operacional.",
     icon: Bus,
-    image: "/assets/images/buscas.png"
+    image: "/assets/images/frotas.png"
   }
 ];
 
 const FALLBACK_IMAGES: Record<string, string> = {
   "/assets/images/guincho.png":
     "https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=2070&auto=format&fit=crop",
-  "/assets/images/buscas.png":
-    "https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=2070&auto=format&fit=crop",
+
   "/assets/images/agentes.png":
-    "https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=2070&auto=format&fit=crop"
+    "https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=2070&auto=format&fit=crop",
+
+  "/assets/images/frotas.png":
+    "https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=2070&auto=format&fit=crop"
 };
 
 function ServiceImage({
@@ -52,6 +54,7 @@ function ServiceImage({
       alt={alt}
       className={className}
       referrerPolicy="no-referrer"
+      loading="lazy"
       onError={() => {
         const fallback = FALLBACK_IMAGES[src];
 
@@ -88,7 +91,8 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {SERVICES.map((service, index) => (
             <Reveal key={index} delay={index * 0.2}>
-              <div className="bg-white rounded-2xl overflow-hidden shadow-xl shadow-black/5 group hover:-translate-y-2 transition-transform duration-500 border border-black/5 h-full flex flex-col">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-xl shadow-black/5 border border-black/5 h-full flex flex-col group hover:-translate-y-2 transition-transform duration-500">
+                
                 <div className="aspect-[16/10] overflow-hidden relative">
                   <ServiceImage
                     src={service.image}
@@ -112,12 +116,13 @@ export default function Services() {
                     {service.description}
                   </p>
 
-                  <div className="pt-4 border-t border-gray-100 flex items-center justify-between">
+                  <div className="pt-4 border-t border-gray-100">
                     <span className="text-[10px] font-heading font-bold uppercase tracking-widest text-primary">
                       Qualidade FGL Brasil
                     </span>
                   </div>
                 </div>
+
               </div>
             </Reveal>
           ))}
