@@ -8,28 +8,28 @@ const SERVICES = [
     description:
       "Serviço de reboque e guincho 24 horas rápido para a remoção segura do seu automóvel em situações de pane mecânica, elétrica ou acidentes.",
     icon: Truck,
-    image: "public/assets/images/guincho.png"
+    image: "/assets/images/guincho.png"
   },
   {
     title: "Recuperação Veicular de Elite",
     description:
       "Monitoramento logístico ativo, rastreador com corte de combustível e suporte tático especializado para localização e recuperação de veículos furtados ou roubados.",
     icon: Car,
-    image: "public/assets/images/agentes.png"
+    image: "/assets/images/agentes.png"
   },
   {
     title: "Rastreamento e Gestão de Frotas",
     description:
       "Gerenciamento inteligente de frotas de cargas, caminhões e carros leves. Reduza custos de combustível, trace itinerários e controle a velocidade operacional.",
     icon: Bus,
-    image: "public/assets/images/buscas.png"
+    image: "/assets/images/buscas.png"
   }
 ];
 
 const FALLBACK_IMAGES: Record<string, string> = {
   "/assets/images/guincho.png":
     "https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=2070&auto=format&fit=crop",
-  "/assets/images/buscas.JPG":
+  "/assets/images/buscas.png":
     "https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=2070&auto=format&fit=crop",
   "/assets/images/agentes.png":
     "https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=2070&auto=format&fit=crop"
