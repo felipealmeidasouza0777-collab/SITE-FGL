@@ -14,14 +14,13 @@ const CTA: React.FC = () => {
           <Reveal width="100%">
             <h2 className="font-heading font-extrabold text-5xl md:text-7xl mb-8 leading-tight text-dark">
               Não espere virar <br/>
-              <span className="text-primary">estatística.</span>
+              mais uma <span className="text-primary">estatística.</span>
             </h2>
           </Reveal>
 
           <Reveal width="100%" delay={0.4}>
             <p className="font-sans text-dark/70 text-lg md:text-xl max-w-2xl mx-auto mb-16">
-              O custo de um rastreador é insignificante perto do valor do seu patrimônio. 
-              Tome o controle agora mesmo e garanta sua tranquilidade.
+              O investimento em um rastreador veicular de alta precisão é mínimo perto da segurança de sua família e do valor de seu patrimônio. Garanta a proteção inteligente da FGL Brasil agora mesmo.
             </p>
           </Reveal>
 

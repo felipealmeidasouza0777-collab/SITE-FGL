@@ -67,25 +67,25 @@ const Features: React.FC = () => {
           <div className="order-2 lg:order-1 relative z-30">
             <Reveal width="100%">
               <span className="text-primary font-heading font-bold text-xs uppercase tracking-widest mb-4 block">
-                Controle Total
+                Controle Total e Rastreamento em Tempo Real
               </span>
               <h2 className="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl text-dark mb-8 leading-[1.1]">
-                A paz de saber que <br/>
-                <span className="text-primary">tudo está seguro.</span>
+                A tranquilidade de saber que <br/>
+                seu veículo <span className="text-primary">está seguro 24 horas.</span>
               </h2>
             </Reveal>
 
             <Reveal width="100%" delay={0.4}>
               <p className="font-sans text-dark/70 text-lg mb-10 leading-relaxed max-w-md">
-                Esqueça a complexidade. Com o aplicativo FGL, você tem o poder de monitorar, bloquear e gerenciar seu patrimônio com a mesma facilidade de enviar uma mensagem.
+                Esqueça alarmes ineficientes ou seguros de alto custo. Com o sistema de rastreamento veicular da FGL Brasil e nosso aplicativo próprio, você tem o controle total na palma da mão para rastrear, bloquear e monitorar seu bem com segurança instantânea.
               </p>
               
               <ul className="space-y-6">
                 {[
-                  "Notificações instantâneas de ignição",
-                  "Bloqueio de veículo em 1 clique",
-                  "Histórico completo de trajetos",
-                  "Suporte Especializado direto pelo App"
+                  "Notificações de ignição ligada e desligada em tempo real",
+                  "Bloqueio veicular remoto em apenas 1 clique",
+                  "Histórico de rotas completo com velocidade real",
+                  "Suporte ao cliente especializado direto pelo aplicativo"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 font-heading font-bold text-dark/80 text-sm md:text-base">
                     <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
@@ -114,7 +114,7 @@ const Features: React.FC = () => {
             
             <Reveal>
               <h3 className="font-heading font-extrabold text-2xl md:text-3xl text-dark mb-12 text-center">
-                Aplicativo Próprio da FGL
+                Mantenha o Controle com o Aplicativo FGL Brasil
               </h3>
             </Reveal>
 

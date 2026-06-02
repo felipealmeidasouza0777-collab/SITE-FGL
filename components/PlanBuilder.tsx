@@ -101,13 +101,13 @@ Gostaria de dar continuidade.`;
       <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-5xl">
         <div className="text-center mb-12 md:mb-16">
           <span className="text-primary font-heading font-bold text-xs uppercase tracking-widest mb-3 block">
-            Personalize sua Segurança
+            Simulador de Preço de Rastreador
           </span>
           <h2 className="font-heading font-extrabold text-3xl md:text-4xl lg:text-5xl text-dark mb-4">
-            Monte seu Plano de <span className="text-primary">Proteção Veicular contra Roubo/furto 🚗</span>
+            Simule o Preço do seu <span className="text-primary">Rastreador Veicular e Bloqueador 🚗</span>
           </h2>
           <p className="text-dark/60 font-sans max-w-2xl mx-auto text-base md:text-lg">
-            Escolha a opção que melhor atende às suas necessidades. Transparência total e sem surpresas.
+            Monte seu plano personalizado de rastreamento e proteção contra roubo ou furto com total transparência e facilidade.
           </p>
         </div>
 

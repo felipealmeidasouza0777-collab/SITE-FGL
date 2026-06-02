@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
           >
             <ShieldCheck className="text-primary w-5 h-5" />
             <span className="text-white/90 font-heading font-bold tracking-widest text-xs uppercase">
-              Tecnologia de Rastreamento Avançado
+              FGL BRASIL RASTREADORES - TECNOLOGIA DE RASTREAMENTO VEICULAR
             </span>
           </motion.div>
 
@@ -36,8 +36,8 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="font-heading font-extrabold text-5xl md:text-7xl lg:text-8xl leading-[1.05] text-white mb-8"
           >
-            Segurança e controle <br className="hidden md:block"/>
-            para o seu <span className="text-primary">patrimônio.</span>
+            Rastreador veicular, <br className="hidden md:block"/>
+            segurança e controle para o seu <span className="text-primary">patrimônio.</span>
           </motion.h1>
 
           <motion.p
@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="font-sans text-lg md:text-xl text-white/90 font-medium max-w-2xl mb-12 leading-relaxed"
           >
-            Mais de 3.000 clientes atendidos e satisfeitos. Proteja seu veículo com a estabilidade e tecnologia da <strong className="text-primary font-bold">FGL BRASIL</strong>.
+            Mais de 3.000 clientes satisfeitos no Brasil. Proteja seu veículo (carro, moto ou caminhão) com a estabilidade do melhor rastreador veicular e monitoramento 24h da <strong className="text-primary font-bold">FGL BRASIL</strong>.
           </motion.p>
 
           <motion.div

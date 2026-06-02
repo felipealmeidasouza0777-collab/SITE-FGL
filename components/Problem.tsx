@@ -33,16 +33,16 @@ const Problem: React.FC = () => {
           <div className="order-1 md:order-2">
             <Reveal>
               <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-5xl text-dark mb-8 leading-tight">
-                A sensação de impotência é o <span className="text-primary">maior custo.</span>
+                Proteção contra roubo e furto: a sensação de impotência é o <span className="text-primary">maior custo.</span>
               </h2>
             </Reveal>
             <Reveal delay={0.4}>
               <div className="space-y-6 font-sans text-dark/70 text-lg leading-relaxed">
                 <p>
-                  Imagine sair do trabalho e não encontrar seu carro. O choque inicial, a burocracia do seguro, o prejuízo financeiro que nenhuma apólice cobre integralmente (como os acessórios e o transtorno).
+                  Imagine sair do trabalho ou de casa e não encontrar seu carro ou moto. O choque inicial, a burocracia das seguradoras tradicionais e o prejuízo financeiro que nenhuma apólice comum cobre integralmente são transtornos evitáveis.
                 </p>
                 <p>
-                  Estatísticas não escolhem vítimas. Sem rastreamento, suas chances de recuperação são próximas de zero. Com a <strong>FGL</strong>, você vira o jogo.
+                  As estatísticas de criminalidade urbana no Brasil comprovam que ninguém está imune. Sem um sistema de rastreamento veicular e bloqueador instalado, as chances de recuperar o bem são próximas de zero. Com a robustez e tecnologia da <strong>FGL BRASIL</strong>, você vira o jogo.
                 </p>
                 <div className="pt-8">
                   <div className="bg-gray-50 border-l-4 border-primary p-6 rounded-r-lg">
